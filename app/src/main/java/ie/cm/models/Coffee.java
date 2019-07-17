@@ -4,7 +4,7 @@ import java.io.Serializable;
 
 public class Coffee implements Serializable
 {
-	public static int autoid = -1;
+	public static int autoId = 1;
 	public int coffeeId;
 	public String name;
 	public String shop;
@@ -17,7 +17,7 @@ public class Coffee implements Serializable
 
 	public Coffee(String name, String shop, double rating, double price, boolean fav)
 	{
-		this.coffeeId = autoid++;
+		this.coffeeId = autoId++;
 		this.name = name;
 		this.shop = shop;
 		this.rating = rating;
